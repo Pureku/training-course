@@ -3,9 +3,9 @@ import React from "react";
 const Nav = () => {
   return (
     <>
-      <div className="shadow-md bg-base-100 sticky top-0 z-30 h-16">
+      <div className="shadow-md bg-[#fbc424] sticky top-0 z-30 h-16">
         <div className="max-w-[1150px] mx-auto my-0 relative xl:max-w-[1200px] lg:max-w-[1000px] ">
-          <nav className="navbar bg-base-100">
+          <nav className="navbar bg-[#fbc424]">
             <div className="navbar-start">
               <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost btn-circle">

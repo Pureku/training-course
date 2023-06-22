@@ -385,3 +385,33 @@ h6 {
   max-width: 1126px;
   text-align: center;
 }
+
+.scinter {
+  box-sizing: border-box;
+  min-width: 0px;
+  margin: 0px auto 32px;
+  padding: 64px 8px 64px 16px;
+  background-color: rgb(249, 249, 249);
+  width: 100%;
+}
+
+.interh {
+  box-sizing: border-box;
+  min-width: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  max-width: 1126px;
+}
+
+.interb {
+  box-sizing: border-box;
+  min-width: 0px;
+  margin: 0px auto;
+  display: grid;
+  -moz-column-gap: 24px;
+  column-gap: 24px;
+  grid-template-columns: 578px 1fr;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
