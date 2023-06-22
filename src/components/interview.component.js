@@ -4,7 +4,7 @@ const Interview = () => {
   return (
     <>
       <div className="interh">
-        <h2 className="lg:text-3xl">Course Outcomes</h2>
+        <h2 className="lg:text-3xl text-[#3b4042]">Course Outcomes</h2>
       </div>
       <div className="box-border min-w-0">
         <div className="interb max-w-[1126px]">

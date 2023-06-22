@@ -30,7 +30,7 @@ const Section = () => {
   return (
     <>
       <div className="sch lg:text-3xl pb-[45px]">
-        <h2>คอร์สเรียนสำหรับแผนก</h2>
+        <h2 className="text-[#3b4042]">คอร์สเรียนสำหรับแผนก</h2>
       </div>
       <div className="box-border min-w-0">
         <div className="w-[1120px]">
@@ -38,8 +38,8 @@ const Section = () => {
             {imgList.map((e) => {
               return (
                 <a className="ascdt">
-                  <div className="card w-[auto] bg-base-100">
-                    <figure className="px-10 pt-10">
+                  <div className="card w-[auto] bg-[#f9f9f9]">
+                    <figure className="px-10 pt-10 transition duration-300 transform hover:scale-150">
                       <img src={e.src} alt="Shoes" className="rounded-xl" />
                     </figure>
                     <div className="card-body items-center text-center">

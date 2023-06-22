@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="bg-base-200">
+      <div className="bg-[#fbedbc]">
         <div className="max-w-[1150px] mx-auto my-0 relative xl:max-w-[1200px] lg:max-w-[900px]">
-          <footer className="footer p-10 bg-base-200 text-base-content">
+          <footer className="footer p-10 text-[#34454c]">
             <div>
               <svg
                 width="50"

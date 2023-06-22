@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -29,19 +31,21 @@ const Nav = () => {
                   className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
                 >
                   <li>
-                    <a>Homepage</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <a>Portfolio</a>
+                    <Link to="/about">About</Link>
                   </li>
                   <li>
-                    <a>About</a>
+                    <Link to="/contact">Contact</Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="navbar-center">
-              <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+              <a className="btn btn-ghost normal-case text-xl text-[#3b4042]">
+                900TRAINING
+              </a>
             </div>
             <div className="navbar-end">
               <button className="btn btn-ghost btn-circle">
