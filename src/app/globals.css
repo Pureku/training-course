@@ -166,9 +166,9 @@ h6 {
   -webkit-box-pack: start;
   justify-self: start;
   display: grid;
-  gap: 16px;
+  gap: 48px;
   grid-template-columns: minmax(auto, 350px) 1fr;
-  max-width: 960px;
+  max-width: 1126px;
   width: 100%;
 }
 
@@ -202,7 +202,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
-  max-width: 960px;
+  max-width: 1126px;
 }
 
 .bmenu {
@@ -216,7 +216,7 @@ h6 {
   align-items: center;
   display: grid;
   gap: 16px;
-  width: 960px;
+  width: 1126px;
 }
 
 .screc {
@@ -231,7 +231,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
-  max-width: 960px;
+  max-width: 1126px;
 }
 
 .brec {
@@ -245,7 +245,7 @@ h6 {
   align-items: center;
   display: grid;
   gap: 16px;
-  width: 960px;
+  width: 1126px;
 }
 
 .sccsmn {
@@ -291,9 +291,10 @@ h6 {
   box-sizing: border-box;
   min-width: 0px;
   margin-bottom: 64px;
+  margin-top: 60px;
   display: grid;
   column-gap: 24px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 578px 1fr;
 }
 
 .imgcos {
@@ -302,4 +303,85 @@ h6 {
   max-width: 100%;
   height: auto;
   display: none;
+}
+
+.cfcdtlt {
+  box-sizing: border-box;
+  min-width: 0px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.cfcdtl {
+  box-sizing: border-box;
+  min-width: 0px;
+  margin-bottom: 25px;
+  -webkit-box-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.cfcdtltdi {
+  background-color: #cac327;
+  border-radius: 50%;
+  place-items: center;
+  color: white;
+  flex: 0 0 auto;
+}
+
+.dtlti {
+  box-sizing: border-box;
+  min-width: 0px;
+  margin-right: 16px;
+  display: grid;
+  width: 24px;
+  height: 24px;
+}
+
+.sctn {
+  box-sizing: border-box;
+  min-width: 0px;
+  margin: 40px auto;
+  padding: 0px 16px;
+  max-width: 100%;
+}
+
+.scb {
+  box-sizing: border-box;
+  min-width: 0px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  display: grid;
+  gap: 16px;
+  width: 100%;
+}
+
+.ascdt {
+  box-sizing: border-box;
+  min-width: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #34454c;
+}
+
+.dtasc {
+  box-sizing: border-box;
+  min-width: 0px;
+  margin-bottom: 32px;
+  place-items: flex-start center;
+  display: grid;
+  gap: 8px;
+  grid-template-rows: 140px 30px 45px auto;
+}
+
+.sch {
+  box-sizing: border-box;
+  min-width: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  max-width: 1126px;
+  text-align: center;
 }

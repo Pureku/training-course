@@ -5,6 +5,7 @@ import Intro from "@/components/intro.component";
 import Menu from "@/components/menu.component";
 import Recom from "@/components/recom.component";
 import Course from "@/components/course.component";
+import Section from "@/components/section.component";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
         </section>
         <section className="sccsmn sccsup">
           <Course />
+        </section>
+        <section className="sctn">
+          <Section />
         </section>
       </div>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">

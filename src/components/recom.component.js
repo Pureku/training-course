@@ -12,9 +12,14 @@ const Recom = () => {
       </div>
       <div className="box-border min-w-[0px] overflow-x-auto">
         <div className="brec grid-cols-4  gap-4">
-          <div className="card card-compact w-[auto] bg-base-100 shadow-md">
+          <div className="card card-compact w-[auto]  h-[360px] bg-base-100 shadow-md">
             <figure>
-              <img src={Img1} alt="" />
+              <img
+                src={
+                  "https://raw.githack.com/Pureku/training-course/main/src/img/excel-course.png?raw=true"
+                }
+                alt=""
+              />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Shoes!</h2>
@@ -50,9 +55,14 @@ const Recom = () => {
               </div>
             </div>
           </div>
-          <div className="card card-compact w-[auto] bg-base-100 shadow-md">
+          <div className="card card-compact w-[auto]  h-[360px]  bg-base-100 shadow-md">
             <figure>
-              <img src={Img2} alt="" />
+              <img
+                src={
+                  "https://raw.githack.com/Pureku/training-course/main/src/img/original.jpg?raw=true"
+                }
+                alt=""
+              />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Shoes!</h2>
@@ -88,9 +98,14 @@ const Recom = () => {
               </div>
             </div>
           </div>
-          <div className="card card-compact w-[auto] bg-base-100 shadow-md">
+          <div className="card card-compact w-[auto] h-[360px]  bg-base-100 shadow-md">
             <figure>
-              <img src={Img3} alt="" />
+              <img
+                src={
+                  "https://raw.githack.com/Pureku/training-course/main/src/img/original.jpg?raw=true"
+                }
+                alt=""
+              />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Shoes!</h2>
@@ -126,9 +141,14 @@ const Recom = () => {
               </div>
             </div>
           </div>
-          <div className="card card-compact w-[auto] bg-base-100 shadow-md">
+          <div className="card card-compact w-[auto] h-[360px]  bg-base-100 shadow-md">
             <figure>
-              <img src={Img4} alt="" />
+              <img
+                src={
+                  "https://raw.githack.com/Pureku/training-course/main/src/img/Course-details.png?raw=true"
+                }
+                alt=""
+              />
             </figure>
             <div className="card-body">
               <h2 className="card-title">Shoes!</h2>
