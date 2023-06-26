@@ -13,8 +13,9 @@ const Recom = () => {
       <div className="box-border min-w-[0px] overflow-x-auto">
         <div className="brec grid-cols-4  gap-4">
           <div className="card card-compact w-[auto]  h-[360px] bg-base-100 shadow-md">
-            <figure>
+            <figure className="object-cover">
               <img
+                className="h-[190px]"
                 src={
                   "https://raw.githack.com/Pureku/training-course/main/src/img/excel-course.png?raw=true"
                 }
