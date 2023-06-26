@@ -446,7 +446,41 @@ input[type="search"]::-webkit-search-cancel-button {
   justify-self: start;
   max-width: 1126px;
   width: 100%;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.04);
-  border-radius: 5px;
-  border-color: #34454c;
+  text-align: center;
+  position: relative;
+}
+
+.intcosph {
+  box-sizing: border-box;
+  min-width: 0px;
+  margin: 0px auto;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-self: start;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: minmax(auto, 350px) 1fr;
+  max-width: 1126px;
+  width: 100%;
+}
+
+.imgIntroCos {
+  /* width: 100%; */
+  /* height: auto; */
+  max-height: 400px;
+  padding: 5px;
+  margin: auto;
+}
+
+.hIntroCos {
+  position: absolute;
+  top: 10%;
+  margin: 0px auto;
+  box-sizing: border-box;
+  min-width: 0px;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-self: start;
+  padding: 20px;
+  /* width: 100%; */
 }
