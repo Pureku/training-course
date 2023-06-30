@@ -484,3 +484,30 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 20px;
   /* width: 100%; */
 }
+
+.sticky-aside {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b5b5b5;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

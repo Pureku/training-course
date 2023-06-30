@@ -1,8 +1,4 @@
 import React from "react";
-import Img1 from "../img/Course-details.png";
-import Img2 from "../img/excel-course.png";
-import Img3 from "../img/onlinecourses.jpg";
-import Img4 from "../img/original.jpg";
 
 const Recom = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "../app/globals.css";
+import "../../app/globals.css";
 
 const IntroCourse = () => {
   return (
@@ -12,10 +12,10 @@ const IntroCourse = () => {
               <p className="text-xl">Welcome to New Training Course</p>
             </div>
             <div>
-              <img
+              {/* <img
                 className="imgIntroCos"
-                src="https://raw.githack.com/Pureku/training-course/main/src/img/koosh-brain.webp?raw=true"
-              ></img>
+                src="https://raw.githack.com/Pureku/training-course/main/src/img/koosh-brain1.png?raw=true"
+              ></img> */}
             </div>
           </div>
         </div>

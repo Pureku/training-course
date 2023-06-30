@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import Intro from "@/components/intro.component";
-import Menu from "@/components/menu.component";
-import Recom from "@/components/recom.component";
-import Course from "@/components/course.component";
-import Section from "@/components/section.component";
-import Interview from "@/components/interview.component";
+import Intro from "@/components/index/intro.component";
+import Menu from "@/components/index/menu.component";
+import Recom from "@/components/index/recom.component";
+import Course from "@/components/index/course.component";
+import Section from "@/components/index/section.component";
+import Interview from "@/components/index/interview.component";
 
 const IndexPage = () => {
   return (

@@ -1,5 +1,4 @@
 import React from "react";
-import ImgCoruse from "../img/training01.jpg";
 
 const Course = () => {
   return (
@@ -18,7 +17,7 @@ const Course = () => {
                 src={
                   "https://raw.githack.com/Pureku/training-course/main/src/img/training01.jpg?raw=true"
                 }
-                alt={ImgCoruse}
+                alt=""
               />
               <div className="box-border min-w-0">
                 <h1 className="text-left lg:text-2xl">

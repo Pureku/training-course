@@ -1,21 +1,33 @@
 "use client";
 
 import React from "react";
-import Nav from "@/components/nav.component";
-import Footer from "@/components/footer.component";
+import Nav from "@/components/other/nav.component";
+import Footer from "@/components/other/footer.component";
 import "../app/globals.css";
-import IntroCourse from "@/components/introcourse.component";
+import Intro from "@/components/course/intro.component";
+import RecomCourse from "@/components/course/recom.component";
+import ContentCourse from "@/components/course/content.component";
+import ButtonTop from "@/components/other/buttontop.component";
 
 const Course = () => {
   return (
     <>
-      <Nav />
-      <div className="grid gap-[40px]">
-        <section className="scintcosp">
-          <IntroCourse />
-        </section>
+      <div className="relative">
+        <Nav />
+        <div className="grid gap-[40px]">
+          <section className="scintcosp">
+            <Intro />
+          </section>
+          <section className="box-border min-w-0 mb-[32px]">
+            <RecomCourse />
+          </section>
+          <section className="box-border min-w-0 mb-[32px]">
+            <ContentCourse />
+          </section>
+        </div>
+        <Footer />
+        <ButtonTop />
       </div>
-      <Footer />
     </>
   );
 };

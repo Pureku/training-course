@@ -1,7 +1,9 @@
-import Nav from "@/components/nav.component";
-import Footer from "@/components/footer.component";
+import Nav from "@/components/other/nav.component";
+import Footer from "@/components/other/footer.component";
 import IndexPage from "@/pages/index.page";
 import Course from "@/pages/course.page";
+import "./globals.css";
+import ButtonTop from "@/components/other/buttontop.component";
 
 export default function Home() {
   return (
@@ -9,6 +11,7 @@ export default function Home() {
       <Nav />
       <IndexPage />
       <Footer />
+      <ButtonTop />
     </div>
   );
 }

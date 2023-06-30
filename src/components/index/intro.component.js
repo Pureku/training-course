@@ -1,5 +1,4 @@
 import React from "react";
-import introGif from "../img/studywithib.gif";
 
 const Intro = () => {
   return (
@@ -22,7 +21,7 @@ const Intro = () => {
             src={
               "https://raw.githack.com/Pureku/training-course/main/src/img/studywithib.gif?raw=true"
             }
-            alt={introGif}
+            alt=""
           ></img>
         </div>
       </div>
