@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import Course from "@/pages/course.page";
 
 const Nav = () => {
   return (
@@ -38,7 +37,7 @@ const Nav = () => {
                     <Link href="/course.page">Course</Link>
                   </li>
                   <li>
-                    <Link href="/contact">Contect</Link>
+                    <Link href="/watch.page">Watch</Link>
                   </li>
                 </ul>
               </div>

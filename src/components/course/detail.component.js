@@ -132,7 +132,7 @@ let data = [
 
 let LENGTH = data.length;
 const DATA = [...Array(LENGTH).keys()];
-const LIMIT = 10;
+const LIMIT = 12;
 
 const DetailCourse = () => {
   const [showMore, setShowMore] = useState(true);
@@ -155,7 +155,10 @@ const DetailCourse = () => {
           {list.map((e) => {
             return (
               <>
-                <div className="card static card-compact w-[auto] h-[300px]  bg-base-100 shadow-md rounded-md cursor-pointer ">
+                <div
+                  className="card static card-compact w-[auto] h-[300px]  bg-base-100 shadow-md rounded-md cursor-pointer "
+                  key={data[e].id}
+                >
                   <figure>
                     <img
                       src={
@@ -164,9 +167,9 @@ const DetailCourse = () => {
                       alt=""
                     />
                   </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">{e.title}</h2>
-                    <p>{e.detail}</p>
+                  <div className="card-body" key={data[e].id}>
+                    <h2 className="card-title">{data[e].title}</h2>
+                    <p>{data[e].detail}</p>
                   </div>
                 </div>
               </>
