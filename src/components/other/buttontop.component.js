@@ -6,6 +6,7 @@ const ButtonTop = () => {
   const scrollRef = useRef(null);
 
   const scrollToTop = () => {
+    console.log("test");
     if (scrollRef.current) {
       scrollRef.current.scrollTo(0, 0);
     }
@@ -13,17 +14,17 @@ const ButtonTop = () => {
 
   return (
     <>
-      <div class="fixed right-8 bottom-8 z-50  flex-col gap-3 flex ">
-        <div class="dropdown dropdown-left">
+      <div className="fixed right-8 bottom-8 z-50  flex-col gap-3 flex ">
+        <div className="dropdown dropdown-left">
           <button
             aria-label="Scroll To Comment"
             type="button"
-            class="rounded-full swap bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
-            tabindex="0"
+            className="rounded-full swap bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
+            tabIndex="0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 swap-on fill-current"
+              className="h-5 w-5 swap-on fill-current"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -38,7 +39,7 @@ const ButtonTop = () => {
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 swap-off fill-current"
+              className="h-5 w-5 swap-off fill-current"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -52,8 +53,8 @@ const ButtonTop = () => {
             </svg>
           </button>
           <ul
-            tabindex="0"
-            class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+            tabIndex="0"
+            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
               <a>Item 1</a>
@@ -66,7 +67,7 @@ const ButtonTop = () => {
         <button
           aria-label="Scroll To Comment"
           type="button"
-          class="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
+          className="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
         >
           <svg viewBox="0 0 32 32" class="h-5 w-5" fill="currentColor">
             <title />
@@ -81,13 +82,13 @@ const ButtonTop = () => {
             aria-label="Scroll To Top"
             type="button"
             onClick={scrollToTop}
-            class="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
+            className="rounded-full bg-gray-200 p-2 text-gray-500 transition-all hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-400 dark:hover:bg-gray-600"
           >
-            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </button>

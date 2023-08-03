@@ -152,12 +152,12 @@ const DetailCourse = () => {
     <>
       <div className="max-h-[100vh] h-[100vh] overflow-y-auto pr-2">
         <div className="grid grid-cols-3 gap-4">
-          {list.map((e) => {
+          {list.map((e, index) => {
             return (
               <>
                 <div
                   className="card static card-compact w-[auto] h-[300px]  bg-base-100 shadow-md rounded-md cursor-pointer "
-                  key={data[e].id}
+                  key={index}
                 >
                   <figure>
                     <img
@@ -167,7 +167,7 @@ const DetailCourse = () => {
                       alt=""
                     />
                   </figure>
-                  <div className="card-body" key={data[e].id}>
+                  <div className="card-body">
                     <h2 className="card-title">{data[e].title}</h2>
                     <p>{data[e].detail}</p>
                   </div>

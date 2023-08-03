@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import pexels from "../../img/pexels.png";
+import VideoPlayer from "../other/video.component";
 
 const WatchPlay = () => {
   const content = `TLearn English with a short story. In fact, this episode contains
@@ -31,22 +32,23 @@ const WatchPlay = () => {
   const truncatedContent = showFullContent
     ? content
     : content.slice(0, maxChars);
+
+  const videoSources = [
+    {
+      title: "Test video",
+      path: "http://163.50.57.202/02_Training_by_Department/MT900/VDO%20Process%20950/BP/Stacking/01_%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B9%80%E0%B8%8A%E0%B9%87%E0%B8%84%20Stacking%201,2,3,4,9,10,12,13,14.mp4",
+      type: "video/mp4",
+    },
+  ];
   return (
     <>
       <div className="box-border min-w-0">
-        <iframe
-          src="http://163.50.57.202/02_Training_by_Department/MT900/VDO%20Process%20950/BP/Stacking/01_%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B9%80%E0%B8%8A%E0%B9%87%E0%B8%84%20Stacking%201,2,3,4,9,10,12,13,14.mp4"
-          frameborder="0"
-          allowfullscreen
-          className="w-[100%] h-[500px] rounded-[10px]"
-          controls
-        ></iframe>
         <div className=" mt-0 mr-auto mb-0 ml-auto align-center max-w-[1126px] w-[100%] pb-[20px]">
           <div className="box-border min-w-0 ml-auto mr-auto relative">
-            {/* <ReactPlayer url="https://www.youtube.com/watch?v=wWgIAphfn2U"></ReactPlayer> */}
+            <VideoPlayer videoSources={videoSources} />
           </div>
         </div>
-        <main className="max-w-[1126px] ml-auto mr-auto  py-4 sm:px-6 lg:pl-4">
+        <main className="max-w-[1126px] ml-auto mr-auto  py-4 sm:px-6 lg:pl-4 border-b-indigo-500">
           <header>
             <h1 class="text-2xl font-bold tracking-tight text-gray-900">
               Dashboard

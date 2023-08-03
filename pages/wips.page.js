@@ -5,8 +5,8 @@ import Nav from "@/components/other/nav.component";
 import Footer from "@/components/other/footer.component";
 import ButtonTop from "@/components/other/buttontop.component";
 import "../src/app/globals.css";
-import WatchPlay from "@/components/watch/watch.component";
-import RecomWatch from "@/components/watch/recom.component";
+import Welcome from "@/components/wip/welcome.component";
+import WipCard from "@/components/wip/wipcard.component";
 
 const Watch = () => {
   return (
@@ -14,27 +14,26 @@ const Watch = () => {
       <div>
         <Nav />
         <div className="grid gap-[40px]">
-          <section className="scintcosp">
-            <WatchPlay />
+          <section
+            className="m-5 w-full max-w-[1150px] mx-auto"
+            style={{ marginBottom: "10px", paddingTop: "40px" }}
+          >
+            <Welcome />
           </section>
           <section
-            className="box-border min-w-0  mx-auto mt-0 "
+            className="box-border min-w-0  mx-auto mt-0 w-full max-w-[1150px]"
             style={{ marginBottom: "32px" }}
           >
-            {/* <DetailVideo /> */}
-          </section>
-          <section
-            className="box-border min-w-0 mx-auto mt-0 "
-            style={{ marginBottom: "32px" }}
-          >
-            {/* <ContentCourse /> */}
+            <WipCard />
           </section>
           <section
             className="box-border min-w-0 mx-auto mt-0 "
             style={{ marginBottom: "32px" }}
-          >
-            <RecomWatch />
-          </section>
+          ></section>
+          <section
+            className="box-border min-w-0 mx-auto mt-0 "
+            style={{ marginBottom: "32px" }}
+          ></section>
         </div>
         <Footer />
         <ButtonTop />
