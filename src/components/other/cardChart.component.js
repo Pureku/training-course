@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import LineChartCard from "../charts/lineChartCard.chart";
+import LineChartCard from "../charts/linecard.chart";
 // import Icon from "../../images/icon-01.svg";
 // import EditMenu from "../../components/DropdownEditMenu";
 
@@ -86,7 +86,7 @@ function CardChart() {
   };
 
   return (
-    <div className="flex flex-col   bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
+    <div className="flex flex-col   bg-white dark:bg-slate-800 shadow-sm rounded-sm border border-slate-200 dark:border-slate-700">
       <div className="px-5 ">
         <header className="flex justify-between items-start mb-2"></header>
         <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">

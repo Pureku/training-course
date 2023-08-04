@@ -2,15 +2,25 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import ModalSearch from "./searchmodal.component";
+import Modal from "./modal.component";
 
 const Nav = () => {
   const [searchModalOpen, setSearchModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <>
-      <div className="shadow-md bg-[#fbc424] sticky top-0 z-30 h-16">
+      <div className="shadow-md bg-[#fbc424] sticky top-0 z-30 h-[68px]">
         <div className="max-w-[1150px] mx-auto my-0 relative xl:max-w-[1200px] lg:max-w-[1000px] ">
-          <nav className="navbar bg-[#fbc424]">
+          <nav className="navbar">
             <div className="navbar-start">
               <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -31,7 +41,7 @@ const Nav = () => {
                 </label>
                 <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-[5px] w-52"
                 >
                   <li>
                     <Link href="/">Home</Link>
@@ -127,6 +137,41 @@ const Nav = () => {
                   </svg>
                 </div>
               </button>
+              <div className="dropdown dropdown-end">
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                  <div className="w-10 rounded-full">
+                    <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                  </div>
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-[5px] w-52"
+                >
+                  <li>
+                    <a className="justify-between">
+                      Profile
+                      <span className="badge">New</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a onClick={handleOpenModal}>Settings</a>
+                  </li>
+                  <li>
+                    <a>Logout</a>
+                  </li>
+                </ul>
+                <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+                  <form method="dialog" className="modal-box">
+                    <h3 className="font-bold text-lg">Hello!</h3>
+                    <p className="py-4">
+                      Press ESC key or click outside to close
+                    </p>
+                  </form>
+                  <form method="dialog" className="modal-backdrop">
+                    <button>close</button>
+                  </form>
+                </Modal>
+              </div>
             </div>
           </nav>
         </div>
